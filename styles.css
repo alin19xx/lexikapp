@@ -1,15 +1,22 @@
+@font-face {
+  font-family: 'More Sugar';
+  src: url('fonts/MoreSugar-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   margin: 0;
-  font-family: 'Arial', sans-serif;
+  font-family: 'More Sugar', sans-serif;
   background-color: #fdf4e4;
   color: #6a420e;
 }
 
 .container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 4rem 10%;
+  justify-content: space-between;
+  padding: 4rem 5% 4rem 10%;
   flex-wrap: wrap;
 }
 
@@ -34,10 +41,10 @@ body {
   height: 50px;
 }
 
-.play-button {
-  position: relative;
-  width: 60px;
-  height: 60px;
+.logo-video {
+  width: 400px;
+  height: auto;
+  display: block;
   margin: 0 auto 1rem;
 }
 
@@ -63,12 +70,17 @@ body {
 .right {
   flex: 1;
   min-width: 300px;
-  text-align: center;
+  display: flex;
+  justify-content: flex-end;  /* alinea totalmente a la derecha */
+  align-items: flex-start;
+  text-align: right;
+  margin-right: -5%; /* empuja la imagen fuera del contenedor */
 }
 
 .app-image {
-  max-width: 100%;
+  max-width: 75%;    /* reduce tamaño visual */
   height: auto;
+  margin: 0;
 }
 
 footer {
@@ -82,4 +94,49 @@ footer a {
   color: #6a420e;
   text-decoration: none;
   margin: 0 1rem;
+}
+
+
+
+.legal {
+  padding: 3rem 10%;
+  background-color: #fdf4e4;
+  font-family: 'More Sugar', sans-serif;
+  color: #6a420e;
+}
+
+.legal h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.legal h2 {
+  font-size: 1.3rem;
+  margin-top: 2rem;
+}
+
+.legal p, .legal ul {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.legal ul {
+  padding-left: 1.2rem;
+}
+
+.back-button {
+  display: inline-block;
+  margin-bottom: 2rem;
+  text-decoration: none;
+  color: #6a420e;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+
+.legal a[href^="mailto:"] {
+  color: #6a420e; /* el color que tú quieras */
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 1.6rem;
 }
