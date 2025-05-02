@@ -140,3 +140,51 @@ footer a {
   text-decoration: underline;
   font-size: 1.6rem;
 }
+
+
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.left > * {
+  animation: fadeInDown 1s ease forwards;
+  opacity: 0;
+}
+
+.left h1 {
+  animation-delay: 0.2s;
+}
+
+.left p {
+  animation-delay: 0.4s;
+}
+
+.left a {
+  animation-delay: 0.6s;
+}
+
+.app-image {
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 0.6s;
+}
